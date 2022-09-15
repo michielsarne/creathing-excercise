@@ -1,0 +1,34 @@
+
+//colors
+$color-bg: #272727;
+$color-dark: #242424a9;
+$color-light: #ffff;
+
+
+
+//font-weights
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 600;
+$fw-bold: 700;
+$fw-extrabold: 800;
+
+//containers 
+$grid-breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1700px
+) !default;
+
+$container-max-widths: (
+  xs: auto,
+  sm: 540px,
+  lg: 960px,
+  md: 720px,
+  xl: 1140px,
+  xxl: 1360px,
+  xxxl: 1600px
+) !default;
