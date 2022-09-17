@@ -6,3 +6,27 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+body {
+    background-color: #FFF9C4;
+    position: relative;
+    z-index: -12;
+}
+
+a {
+    text-decoration: none;
+    transition: all ease-in-out .2s;
+}
+a:hover {
+    transition: all ease-in-out .2s;
+}
+
+h1 {
+    font-family: "Bauhaus";
+}
+
+
+p {
+    font-size: 20px;
+    font-weight: 300;
+}
