@@ -1,2 +1,11 @@
 @import '../node_modules/bootstrap/dist/css/bootstrap.css';
 @import '../node_modules/bootstrap/scss/mixins/breakpoints';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+@font-face {
+    font-family: "Bauhaus";
+    src: url('../fonts/BAUHS93.ttf')
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+}

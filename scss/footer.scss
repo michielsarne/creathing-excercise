@@ -1,0 +1,38 @@
+.c-footer {
+    background-color: #0A1760;
+    padding-top: 4rem;
+    &__img {
+        display: flex;
+        justify-content: end;
+        margin-bottom: 4rem;
+        @include media-breakpoint-down(md) {
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        & img {
+            width: 15rem;
+            height: 15rem;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+    }
+    &__quote {
+        color: white;
+        text-align: center;
+        
+        & h2 {
+            margin-top: 3rem;
+        }
+    }
+    &__end {
+        background-color: white;
+        &-content {
+            border: solid 2px #0A1760;
+            box-sizing: border-box;
+            & p {
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+}

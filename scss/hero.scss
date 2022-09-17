@@ -1,0 +1,150 @@
+.c-hero {
+    position: relative;
+    z-index: -7;
+    &__content {
+        width: 30%;
+        text-align: center;
+        @include media-breakpoint-down(md) {
+            width: 50%;
+        }
+        @include media-breakpoint-down(sm) {
+            width: 60%;
+        }
+        & h1 {
+            text-transform: uppercase;
+            font-size: 85px;
+            color: black;
+            word-break: break-word;
+            margin-bottom: 2rem;
+            @include media-breakpoint-down(xxxl) {
+                font-size: 70px;
+            }
+            @include media-breakpoint-down(xxl) {
+                font-size: 60px;
+            }
+            @include media-breakpoint-down(xl) {
+                font-size: 48px;
+            }
+            @include media-breakpoint-down(lg) {
+                font-size: 38px;
+            }
+        }
+        & p {
+            margin-bottom: 4rem;
+            color: #0A1760;
+        }
+    }
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: url('../img/Waves.svg'), url('../img/star.svg'), url('../img/sprial.svg'), url('../img/purple\ heart.svg');
+        position: relative;
+        background-repeat: repeat-y, no-repeat, no-repeat, no-repeat, no-repeat;
+        background-position: left 0 top 30%, left 15% bottom 20%, top 20% right 30%, left 25% top 15%;
+        @include media-breakpoint-down(xxxl) {
+            background-size: auto, 3rem, 3rem, 3rem;
+            background-position: left 0 top 30%, left 10% bottom 20%, top 20% right 27%, left 20% top 15%;
+        }
+        @include media-breakpoint-down(lg) {
+            background-size: auto, 3rem, 1rem, 3rem;
+        }
+    }
+    &__svgbox {
+        position: absolute;
+        right: 0;
+        width: 25%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        &-details {
+            width: 100% !important;
+            height: 100% !important;
+            position: absolute;
+            top: 0;
+            background: url('../img/stain.svg'), url('../img/purple\ heart.svg'), url('../img/star2.svg'), url('../img/square.svg'), url('../img/bouncers.svg');
+            background-position: top 70% center, top 12% right 8%, left 8% top 50%, top 90% center, right 8% top 50%;
+            background-repeat: no-repeat;
+            @include media-breakpoint-down(xxxl) {
+                background-position: top 70% center, top 12% right 8%, left 8% top 50%, top 90% center, right 8% top 50%;
+                background-size: 6rem;
+            }
+            @include media-breakpoint-down(xxl) {
+                background-size: 4rem;
+            }
+            @include media-breakpoint-down(xl) {
+                background-size: 3rem;
+            }
+            @include media-breakpoint-down(lg) {
+                background-size: 2rem;
+            }
+        }
+        & div {
+            width: calc(100%/3);
+            height: 230px;
+            @include media-breakpoint-down(xxxl) {
+                height: 180px;
+            }
+            @include media-breakpoint-down(xxl) {
+                height: 150px;
+            }
+            @include media-breakpoint-down(xl) {
+                height: 130px;
+            }
+            @include media-breakpoint-down(lg) {
+                height: 100px;
+            }
+            @include media-breakpoint-down(md) {
+                height: 75px;
+            }
+        }
+        
+        &-1 {
+            background: url('../img/red.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        &-2 {
+            background: url('../img/blueoval.svg'), url('../img/heart.svg');
+            background-position: center 0, top 0;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        &-3 {
+            background: url('../img/white.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        &-4 {
+            background: url('../img/yellowrect.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        &-5 {
+            background: url('../img/whiteb.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        &-6 {
+            background: url('../img/yellowrectnob.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        &-7 {
+            background: url('../img/white2.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        &-8 {
+            background: url('../img/redrect.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        &-9 {
+            background: url('../img/bluerect.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+}
