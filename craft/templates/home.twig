@@ -1,0 +1,137 @@
+{% extends "index" %}
+
+
+{% block content %}
+
+<!-- hero section -->
+    <section class="c-hero">
+        <div class="container-fluid c-hero__container">
+            <div class="c-hero__svgbox">
+                <div class="c-hero__svgbox-1"></div>
+                <div class="c-hero__svgbox-2"></div>
+                <div class="c-hero__svgbox-3"></div>
+                <div class="c-hero__svgbox-4"></div>
+                <div class="c-hero__svgbox-5"></div>
+                <div class="c-hero__svgbox-6"></div>
+                <div class="c-hero__svgbox-7"></div>
+                <div class="c-hero__svgbox-8"></div>
+                <div class="c-hero__svgbox-9"></div>
+                <div class="c-hero__svgbox-details"></div>
+            </div>
+            <div class="row c-hero__content">
+                <div class="col">
+                    <h1>{{ entry.heroTitle }}</h1>
+                    <p>{{ entry.heroText }}</p>
+                    <a class="c-button clickToSection">{{ entry.heroButton }}</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- search section -->
+    <section class="c-search">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col c-search__col">
+                    <div class="c-search__title">
+                        <h1>{{ entry.searchTitle }}</h1>
+                    </div>
+
+                    <div class="c-search__filter">
+                        <div>
+                            <input class="gender-male" type="checkbox" id="Male" name="Male" value="Male">
+                            <i class="c-search__filter-icon fa-solid fa-person"></i>
+                        </div>
+                        
+                        <div>
+                            <input class="gender-female" type="checkbox" id="Female" name="Female" value="Female">
+                            <i class="c-search__filter-icon fa-solid fa-person-dress"></i>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="c-search__input-wrapper"><input placeholder="{{ entry.searchPlaceholder }}" type="text" id="fname" class="search-box c-search__input" name="fname"></div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="c-search__items">
+        <div class="container">
+            <div class="row hero-list">
+            </div>
+        </div>
+    </section>
+    <section class="c-search__popup popup">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="c-search__popup-card">
+                        <div class="c-search__popup-info">
+                            <div class="text-center">
+                                <img src="" class="hero-image" alt="">
+                                <h1 class="popup-title"></h1>
+                            </div>
+                            <ul>
+                                <li><span>gender:</span> <span class="gender"></span></li>
+                                <li><span>race:</span> <span class="race"></span></li>
+                                <li><span>height:</span> <span class="height"></span></li>
+                                <li><span>weight:</span> <span class="weight"></li>
+                                <li><span>eye color:</span> <span class="eye"></li>
+                                <li><span>hair color:</span> <span class="hair"></li>
+
+                            </ul>
+                            
+                        </div>
+                        <div class="c-search__popup-details">
+                            <div class="c-search__popup-bio">
+                                <h1>Biography</h1>
+                                <ul>
+                                    <li><span>aliases:</span> <span class="aliases"></span></li>
+                                    <li><span>alignment:</span> <span class="alignment"></span></li>
+                                    <li><span>alter egos:</span> <span class="ego"></span></li>
+                                    <li><span>first appearance:</span> <span class="appearance"></li>
+                                    <li><span>full name:</span> <span class="name"></li>
+                                    <li><span>place of birth:</span> <span class="birth"></li>
+                                    <li><span>publisher:</span> <span class="publisher"></li>
+                                </ul>
+                            </div>
+                            <div class="c-search__popup-connections">
+                                <h1>Connections</h1>
+                                <ul>
+                                    <li><span>group affiliation:</span> <span class="group"></span></li>
+                                    <li><span>relatives:</span> <span class="relatives"></span></li>
+                                </ul>
+                            </div>
+                            <div class="c-search__popup-power">
+                                <h1>Powerstats</h1>
+                                <ul>
+                                    <li><span>combat:</span> <span class="combat"></span></li>
+                                    <li><span>durability:</span> <span class="durability"></span></li>
+                                    <li><span>intelligence:</span> <span class="intelligence"></span></li>
+                                    <li><span>power:</span> <span class="power"></span></li>
+                                    <li><span>speed:</span> <span class="speed"></span></li>
+                                    <li><span>strength:</span> <span class="strength"></span></li>
+                                </ul>
+                            </div>
+                            <div class="c-search__popup-work">
+                                <h1>Work</h1>
+                                <ul>
+                                    <li><span>base:</span> <span class="base"></span></li>
+                                    <li><span>occupation:</span> <span class="occupation"></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+{% endblock %}

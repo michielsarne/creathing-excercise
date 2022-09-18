@@ -1,0 +1,66 @@
+fieldLayouts:
+  4a435398-2d0b-4f00-9e98-10c1cab5bb6a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: beef0fce-d56c-4af6-95b7-f3a199c18b1c # quote title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 784c8afa-115b-4ed9-a24c-0a794f931c2f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e9096705-ec2b-4780-98f5-b843339bbd30 # quote author
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4bd84d53-9622-4097-8623-eee03f13ed73
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8b18ad29-9d1d-4b4c-a2b0-3703b745f582 # quote image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cedc8629-18de-45c3-b72e-8a3f4dcf815b
+            userCondition: null
+            warning: null
+            width: 100
+        name: quote
+        uid: 37498952-e903-464d-9555-b2afb2f5f668
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: d2977d5f-ee42-42f6-afa5-08f8239b8afd # footer mail
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bc15dae7-e67a-418a-a633-c058d70e8f77
+            userCondition: null
+            warning: null
+            width: 100
+        name: info
+        uid: 8a2c45ff-18cb-4880-ab98-20675595a4ab
+        userCondition: null
+handle: footer
+name: footer
+sortOrder: 2

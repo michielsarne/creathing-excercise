@@ -1,0 +1,24 @@
+fieldLayouts:
+  cf910a2b-eb38-4cc8-930c-bc1411a5eb29:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: cca98f02-ed7d-40a8-bc17-0a7d234b816e # nav item
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6de7c421-72b3-4b65-b100-6ebd45bc28a6
+            userCondition: null
+            warning: null
+            width: 100
+        name: content
+        uid: b6ad5d5e-97a4-4156-952b-0eb443c569ec
+        userCondition: null
+handle: navigation
+name: navigation
+sortOrder: 1
