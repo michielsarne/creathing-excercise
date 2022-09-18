@@ -1,0 +1,115 @@
+fieldLayouts:
+  fa52033d-3e29-43aa-8dc5-9abb91d73e53:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 2b0a4a42-a9d8-4ea1-8442-3a33eb83c026
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f06231ab-fb32-4ab2-8854-2f8f21376b6a
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: f6200778-08a2-4cf9-8a6a-0002dfd788f3 # hero title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e2b88c88-cfaa-4d8a-9698-8aa30269825a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 56fc7954-0340-45b8-b54c-707b7acbfeaa # hero text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 82223f3d-9fdd-4a6c-88da-c0ce9475db3d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2adfcf51-2d52-4cef-84ac-bc5cf2fef4bd # hero button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1bf75fd4-8085-4083-bc3b-347ac4a779ee
+            userCondition: null
+            warning: null
+            width: 100
+        name: hero
+        uid: 85699832-3f1c-4a18-af37-7abf90cc21e6
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: ef758374-bf9a-47ca-9857-052203708631 # search title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 95e2ce83-1de6-4f12-ba17-7d05e7c4d64e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 21d8c53d-b773-4dec-98f6-7a877e6ecdde # search placeholder
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9049e1d1-eceb-47a7-a6d6-60018b7278aa
+            userCondition: null
+            warning: null
+            width: 100
+        name: search
+        uid: 912f1d6b-3fcd-409d-9c2b-b17cde578df7
+        userCondition: null
+handle: home
+hasTitleField: false
+name: home
+section: 02c69c04-9e3a-42e9-825a-fa31773c743b # home
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

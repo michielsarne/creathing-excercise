@@ -1,16 +1,24 @@
+{% set isHomepage = entry is defined and entry.uri == "__home__" ? true : false %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- styles -->
-    <link rel="stylesheet" href="dist/styles.min.css">
 
-    <!-- scripts -->
-    <script src="scripts/dataHandler.js"></script>
-    <script src="scripts/superhero.js"></script>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ craft.app.sites.primarySite.baseUrl }}/img/favicon.ico">
+
+
+    <!-- title -->
+    <title>{{ general.siteName }}{% if isHomepage %}{% else %} |  {{ entry.pageName }}{% endif %}</title>
+
+
+    <!-- styles -->
+    <link rel="stylesheet" href="{{ craft.app.sites.primarySite.baseUrl }}/dist/styles.min.css">
+
+
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -21,7 +29,7 @@
         <nav class="c-nav">
             <div class="container">
                 <div class="row">
-                    <div class="col-8 col-lg-4 c-nav__title"><a class="c-nav__title-link" href=""><span>Superheroes'</span> <span>library</span></a></div>
+                    <div class="col-8 col-lg-4 c-nav__title"><a class="c-nav__title-link" href="{{ craft.app.sites.primarySite.baseUrl }}"><span>Superheroes'</span> <span>library</span></a></div>
                     <input type="checkbox" class="c-nav__checkbox">
                     <div class="c-nav__box">
                             <span class="c-nav__bar c-nav__bar--top"></span>
@@ -31,7 +39,11 @@
                     <div class="col-4 col-lg-8 c-nav__container">
                         
                         <ul>
-                            <li><a href="about.html">About</a></li>
+                        {% for link in navigation.navItem.all() %}
+                            {% set linkDestination = link.linkDestination.one() %}
+                            <li><a href="{{ linkDestination.url }}">{{ link.navLink }}</a></li>
+                        {% endfor %}
+                            
                         </ul>
                     </div>
                 </div>
@@ -40,21 +52,24 @@
     </header>
 
 
-
-
-
+    {% block content %}
     
+    {% endblock %}
+
+
+
     <!-- footer -->
 
     <footer class="c-footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 order-2 order-md-1 c-footer__img">
-                    <img src="img/homelander.jpg" alt="homelander">
+                {% set image = footer.quoteImage.one() %}
+                    <img src="{{ image.url }}" alt="homelander">
                 </div>
                 <div class="col-lg-6 col-md-6 order-1 order-md-2 c-footer__quote">
-                    <h1>"I'm the Homelander. And I can do whatever the f*** I want."</h1>
-                    <h2>Homelander</h2>
+                    <h1>{{ footer.quoteTitle }}</h1>
+                    <h2>{{ footer.quoteAuthor }}</h2>
                 </div>
             </div>
         </div>
@@ -64,12 +79,15 @@
                     <p>Copyright © 2022 Arne Michiels</p>
                 </div>
                 <div class="col-12 col-md-6 c-footer__end-content">
-                    <p><i class="fa-sharp fa-solid fa-envelope"></i> michielsarne@outlook.com</p>
+                    <p><i class="fa-sharp fa-solid fa-envelope"></i> {{ footer.footerMail }}</p>
                 </div>
             </div>
         </div>
 
     </footer>
+    <!-- scripts -->
+    <script src="{{ craft.app.sites.primarySite.baseUrl }}/scripts/dataHandler.js"></script>
+    <script src="{{ craft.app.sites.primarySite.baseUrl }}/scripts/superhero.js"></script>
     
 </body>
 </html>

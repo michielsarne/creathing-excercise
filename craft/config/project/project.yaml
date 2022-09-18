@@ -1,0 +1,55 @@
+dateModified: 1663501432
+email:
+  fromEmail: michiels.arne@gmail.com
+  fromName: creathing
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  uploads:
+    hasUrls: true
+    name: uploads
+    settings:
+      path: $ASSET_BASE_PATH
+    type: craft\fs\Local
+    url: $ASSET_BASE_URL
+meta:
+  __names__:
+    0ef05905-e72f-4a5c-870c-a15008ce7fab: about # about
+    2adfcf51-2d52-4cef-84ac-bc5cf2fef4bd: 'hero button' # hero button
+    02c69c04-9e3a-42e9-825a-fa31773c743b: home # home
+    04a79805-8c35-4862-90f3-1b74c4c1bf4e: 'site assets' # site assets
+    8b18ad29-9d1d-4b4c-a2b0-3703b745f582: 'quote image' # quote image
+    14cc4830-9c13-47f5-910a-d50d195bcb33: 'page name' # page name
+    14daecee-b9ac-4d96-9bd0-b8fc68972db7: footer # footer
+    21d8c53d-b773-4dec-98f6-7a877e6ecdde: 'search placeholder' # search placeholder
+    23a2fb76-43ac-46df-8e80-d60579157a54: home # home
+    29e098fe-a390-4435-a6f1-3013e13143e6: item # item
+    56fc7954-0340-45b8-b54c-707b7acbfeaa: 'hero text' # hero text
+    194cb702-3f5c-4cf6-b8d6-3e5565613c4c: 'nav link' # nav link
+    268b060d-89b3-4e10-99e6-7c443bfad72d: 'site name' # site name
+    457c67f1-8b06-4a94-8a7e-c849a66d994c: general # general
+    943b2f36-6b40-4fe3-84cb-2400436cf2c5: creathing # creathing
+    4768a37c-be2a-48fd-adb8-5301e616320c: navigation # navigation
+    14794984-d19a-4cbf-922e-4e1ef0f62856: 'about text' # about text
+    71652616-fb2d-4f05-8ab3-881c03bac1f3: about # about
+    a24fd089-e27c-4bd4-9b06-67efe82f2a63: 'about title' # about title
+    ad966b3e-210e-4ff9-a8d5-f52e4d2695ca: Common # Common
+    b1a56d1a-1140-4dad-be47-68770d375d9c: 'link destination' # link destination
+    beef0fce-d56c-4af6-95b7-f3a199c18b1c: 'quote title' # quote title
+    cca98f02-ed7d-40a8-bc17-0a7d234b816e: 'nav item' # nav item
+    d2977d5f-ee42-42f6-afa5-08f8239b8afd: 'footer mail' # footer mail
+    e9096705-ec2b-4780-98f5-b843339bbd30: 'quote author' # quote author
+    ec5bb5c9-78ad-4258-a572-03fa98d04767: creathing # creathing
+    ef758374-bf9a-47ca-9857-052203708631: 'search title' # search title
+    f6200778-08a2-4cf9-8a6a-0002dfd788f3: 'hero title' # hero title
+system:
+  edition: solo
+  live: true
+  name: creathing
+  schemaVersion: 4.0.0.9
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

@@ -1,0 +1,19 @@
+columnSuffix: umrqsifh
+contentColumnType: text
+fieldGroup: ad966b3e-210e-4ff9-a8d5-f52e4d2695ca # Common
+handle: searchPlaceholder
+instructions: null
+name: 'search placeholder'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

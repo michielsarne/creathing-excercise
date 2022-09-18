@@ -1,10 +1,11 @@
 // declare timer
 var timer;
-//declare list
-let list = document.querySelector('.hero-list');
 //declare genders
 let maleChoice;
 let femaleChoice;
+//declare list
+var list = document.querySelector('.hero-list');
+
 // get search box values
 const searchSuper = function() {
     // hide popup by default
@@ -37,18 +38,16 @@ const searchSuper = function() {
     
 
 
-    searchInput.addEventListener('keyup', function(e) {
-        // timer for response
-        clearTimeout(timer);
-        timer = setTimeout(function() {}, 1000);
+    searchInput.addEventListener('keyup', function(e) {        
         const searchString = e.target.value;
         // clear previous searched params in getSuper
         
         list.innerHTML = "";
-        console.log('empty');
         // check if search param is empty, if empty do nothing
         if(searchString == "") {
         } else {
+            clearTimeout(timer);
+            timer = setTimeout(function() {}, 10000);
             //if valid call api with search params and send to getSuper
             handleData(`https://superheroapi.com/api/3201327110080157/search/${searchString}`, getSuper);
         }
@@ -68,8 +67,7 @@ const getSuper = function(data) {
     const maleArr = [];
     const femaleArr = [];
     // let list = document.querySelector('.hero-list');
-    
-   
+   list.innerHTML = "";
     // make male array
     for(i of results) {
         if(i.appearance.gender == 'Male') {
@@ -203,7 +201,6 @@ const clickToSection = function() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('empty');
     console.log('DOM Loaded');
     searchSuper();
     clickToSection();

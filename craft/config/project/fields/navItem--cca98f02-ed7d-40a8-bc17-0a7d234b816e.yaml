@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: ad966b3e-210e-4ff9-a8d5-f52e4d2695ca # Common
+handle: navItem
+instructions: null
+name: 'nav item'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_navitem}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

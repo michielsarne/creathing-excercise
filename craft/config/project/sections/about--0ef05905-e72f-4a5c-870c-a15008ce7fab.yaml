@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: about
+name: about
+propagationMethod: all
+siteSettings:
+  ec5bb5c9-78ad-4258-a572-03fa98d04767: # creathing
+    enabledByDefault: true
+    hasUrls: true
+    template: about.twig
+    uriFormat: about
+type: single
